@@ -1,0 +1,17 @@
+[
+  {
+    "type": "fire",
+    "description": "smoke coming from building",
+    "location": "residential"
+  },
+  {
+    "type": "fire",
+    "description": "small fire on empty highway",
+    "location": "highway"
+  },
+  {
+    "type": "accident",
+    "description": "car crash on road",
+    "location": "road"
+  }
+]
