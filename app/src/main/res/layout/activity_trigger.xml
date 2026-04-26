@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Crisis Type"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+            <RadioButton android:id="@+id/rbFire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fire" android:textSize="18sp"/>
+            <RadioButton android:id="@+id/rbMedical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/medical" android:textSize="18sp"/>
+            <RadioButton android:id="@+id/rbAccident" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accident" android:textSize="18sp"/>
+            <RadioButton android:id="@+id/rbDisaster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disaster" android:textSize="18sp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Describe the situation (Optional)"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top"
+            android:hint="Example: Smoke coming from 3rd floor window"
+            android:background="@android:drawable/editbox_background"
+            android:padding="10dp"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SEND EMERGENCY SIGNAL"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>

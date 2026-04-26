@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CrisisPulse</string>
+    <string name="report_emergency">REPORT EMERGENCY</string>
+    <string name="view_map">VIEW LIVE MAP</string>
+    <string name="fire">Fire</string>
+    <string name="medical">Medical</string>
+    <string name="accident">Accident</string>
+    <string name="disaster">Disaster</string>
+</resources>
