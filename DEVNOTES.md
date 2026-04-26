@@ -44,11 +44,4 @@ The app expects a **Firebase Realtime Database** with the following structure:
   }
 }
 ```
-## 5. CI/CD Pipeline (GitHub Actions)
-The project includes a pre-configured CI/CD pipeline:
-- **Android CI:** Automatically builds and lints the app on every PR.
-- **Firebase CD:** Automatically deploys Cloud Functions to Firebase when code is merged into `main`.
-
-### Setup GitHub Secrets:
-To enable automatic deployment, go to your GitHub Repo **Settings > Secrets and variables > Actions** and add:
-1. `FIREBASE_SERVICE_ACCOUNT_KEY`: Generate this in your **Google Cloud Console > IAM & Admin > Service Accounts** (Create a key in JSON format and paste the content here).
+*Note: The Cloud Function will automatically add `ai_confidence`, `ai_classification`, and update the `status` once triggered.*
